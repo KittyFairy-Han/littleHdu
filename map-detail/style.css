@@ -1,0 +1,51 @@
+#map-detail .main .over-view .imgWrapper{
+    height: 200px;
+    background: linear-gradient(to left bottom, #fff899, #b5f3e9);
+}
+.imgWrapper h1{
+    text-align: center;
+    color: #fec254;
+}
+.imgWrapper h3{
+    text-align: center;
+    color: #fec254;
+}
+#map-detail .main .over-view .detail{
+    padding: 0 2%;
+    width: 96%;
+    height: 100px;
+    display: flex;
+    box-shadow:#b5f3e9 1px 0 15px;
+}
+.detail>div{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail>div>h4{
+    width: auto;
+}
+#map-detail .main .job {
+    padding:20px 2%;
+    width: 96%;
+}
+.job .title {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.job .title img{
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+#map-detail .main .company {
+    background: #fec254;
+    color: white;
+}
+.company .container{
+    width: auto;
+    padding:50px 3%;
+}

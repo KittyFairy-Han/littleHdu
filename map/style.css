@@ -1,0 +1,52 @@
+#map .main .search{
+    margin: 20px 10%;
+    width: 80%;
+    height: 75px;
+    display: flex;
+    box-shadow: 0 0 10px grey;
+}
+.search input{
+    flex: 1;
+    padding:0 0 0 5%;
+    font-size: 24px;
+}
+.search button{
+    width: 80px;
+    height: inherit;
+    font-size: 24px;
+    background: #2fd6ab;
+    color: white;
+    background-image: url("../common/image/search.png");
+    background-position: center;
+}
+#map .main .drop-down{
+    margin: 20px 0;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+}
+.drop-down .switch{
+    width: 64px;
+    height: 80px;
+    text-align: center;
+}
+.drop-down .switch button{
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 50%;
+}
+.drop-down .switch:first-child>button{
+    background-image: url("img/s1.png");
+}
+.drop-down .switch:nth-child(2)>button{
+    background-image: url("img/s2.png");
+}
+.drop-down .switch:nth-child(3)>button{
+    background-image: url("img/s3.png");
+}
+.drop-down .switch:nth-child(4)>button{
+    background-image: url("img/s4.png");
+}
