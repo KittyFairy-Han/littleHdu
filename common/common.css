@@ -3151,3 +3151,39 @@ img.label{
     -webkit-animation-name: slideOutUp;
     animation-name: slideOutUp
 }
+
+/*by han*/
+.my-animated{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    /*animation-fill-mode : none | forwards | backwards | both;*/
+    /*none	不改变默认行为。*/
+    /*forwards	当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。*/
+    /*backwards	在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。*/
+    /*both	向前和向后填充模式都被应用。*/
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function:ease;
+    animation-timing-function:ease;
+    -webkit-animation-delay:0s;
+    animation-delay:0s;
+    -webkit-animation-direction:normal;
+    animation-direction:normal;
+    /*alternate 逆向*/
+}
+.circle-wave{
+    -webkit-animation-name: circle-opacity;
+    animation-name: circle-opacity;
+}
+@keyframes circle-opacity{
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}

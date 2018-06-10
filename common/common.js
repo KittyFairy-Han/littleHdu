@@ -15,3 +15,8 @@ function tab(n) {
     $(".footer .tab").removeClass("active")
     $(".footer .tab:nth-child("+n+")").addClass("active")
 }
+// $(function () {
+//     $('button').click(function () {
+//         $('button').toggleClass('circle-wave')
+//     })
+// })
