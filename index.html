@@ -15,6 +15,15 @@
 <body style="background-color: #2f2f2f">
 <div class="avtar">
     <img src="login/img/avtar.png"/>
+    <form>
+        <input type="text" class="text" value="Username" onfocus="this.value = '';"
+               onblur="if (this.value == '') {this.value = 'Username';}">
+        <input type="password" value="Password" onfocus="this.value = '';"
+               onblur="if (this.value == '') {this.value = 'Password';}">
+    </form>
+    <div class="signin" onclick="tab(1)">
+        <input type="submit" value="Login">
+    </div>
 </div>
 </body>
 </html>
