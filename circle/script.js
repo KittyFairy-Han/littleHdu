@@ -5,20 +5,29 @@ $(function () {
     }, 1000)
 
 
-    //点赞
+    //收藏
     var toggle = true
     $(".item .good").click(function () {
         // console.log($(this).parents('.item'))
         var k = $(this).parents('.item').index();
         // console.log(k)
+        $("section .item:nth-child(" + (k + 1) + ") .part4 .good .icon").removeClass('animated pulse')
         if (toggle) {
             $("section .item:nth-child(" + (k + 1) + ") .part4 .good .icon").attr('src', '../common/image/support-active.png');
+            $("section .item:nth-child(" + (k + 1) + ") .part4 .good .icon").addClass('animated pulse')
         }
         else {
             $("section .item:nth-child(" + (k + 1) + ") .part4 .good .icon").attr('src', '../common/image/support.png');
         }
         toggle = !toggle
     })
+
+    //点击图片
+    // $('.item .pic').click(function () {
+    //     var k = $(this).parents('.item').index();
+    //     $(".item:nth-child(" + (k + 1) + ") .pic").removeClass('animated pulse')
+    //     $(".item:nth-child(" + (k + 1) + ") .pic").addClass('animated pulse')
+    // })
 
 });
 
@@ -53,17 +62,37 @@ function init() {
 
         //背景颜色
         switch (i % 4) {
+            // case 0:
+            //     cu_item.css({"background-image": "url('./image/bg1.png')"});
+            //     break;
+            // case 1:
+            //     cu_item.css({"background-image": "url('./image/bg2.png')"});
+            //     break;
+            // case 2:
+            //     cu_item.css({"background-image": "url('./image/bg3.png')"});
+            //     break;
+            // case 3:
+            //     cu_item.css({"background-image": "url('./image/bg4.png')"});
+            //     break;
+            /*red 1 #ffa5a4 */
+            /*red 2 #f9d8d8 */
+            /*green 1 #2fd6ab */
+            /*green 2 #b5f3e9 */
+            /*yellow 1 #ffe246 */
+            /*yellow 2 #fff899 */
+            /*blue 1 #67bcff */
+            /*blue 2 #c5e3fc */
             case 0:
-                cu_item.css({"background-image": "url('./image/bg1.png')"});
+                cu_item.css({"background-color": "#f9d8d8"});
                 break;
             case 1:
-                cu_item.css({"background-image": "url('./image/bg2.png')"});
+                cu_item.css({"background-color": "#b5f3e9"});
                 break;
             case 2:
-                cu_item.css({"background-image": "url('./image/bg3.png')"});
+                cu_item.css({"background-color": "#fff899"});
                 break;
             case 3:
-                cu_item.css({"background-image": "url('./image/bg4.png')"});
+                cu_item.css({"background-color": "#c5e3fc"});
                 break;
         }
 
@@ -103,17 +132,29 @@ function initNew() {
 
         //背景颜色
         switch (i % 4) {
+            // case 0:
+            //     cu_item.css({"background-image": "url('./image/bg1.png')"});
+            //     break;
+            // case 1:
+            //     cu_item.css({"background-image": "url('./image/bg2.png')"});
+            //     break;
+            // case 2:
+            //     cu_item.css({"background-image": "url('./image/bg3.png')"});
+            //     break;
+            // case 3:
+            //     cu_item.css({"background-image": "url('./image/bg4.png')"});
+            //     break;
             case 0:
-                cu_item.css({"background-image": "url('./image/bg1.png')"});
+                cu_item.css({"background-color": "#f9d8d8"});
                 break;
             case 1:
-                cu_item.css({"background-image": "url('./image/bg2.png')"});
+                cu_item.css({"background-color": "#b5f3e9"});
                 break;
             case 2:
-                cu_item.css({"background-image": "url('./image/bg3.png')"});
+                cu_item.css({"background-color": "#fff899"});
                 break;
             case 3:
-                cu_item.css({"background-image": "url('./image/bg4.png')"});
+                cu_item.css({"background-color": "#c5e3fc"});
                 break;
         }
 

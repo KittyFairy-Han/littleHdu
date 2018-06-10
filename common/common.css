@@ -239,8 +239,8 @@ img.icon{
         transform: scaleX(1)
     }
     50% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05)
+        -webkit-transform: scale3d(2, 2, 2);
+        transform: scale3d(2, 2, 2)
     }
     to {
         -webkit-transform: scaleX(1);
@@ -254,8 +254,8 @@ img.icon{
         transform: scaleX(1)
     }
     50% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05)
+        -webkit-transform: scale3d(2, 2, 2);
+        transform: scale3d(2, 2, 2)
     }
     to {
         -webkit-transform: scaleX(1);
@@ -3198,6 +3198,10 @@ img.icon{
     animation-direction:normal;
     /*alternate 逆向*/
 }
+.my-quick{
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
 .circle-wave{
     -webkit-animation-name: circle-opacity;
     animation-name: circle-opacity;
@@ -3210,5 +3214,19 @@ img.icon{
     to {
         opacity: 0;
         transform: scale(1);
+    }
+}
+.heart-wave{
+    -webkit-animation-name: heart-opacity-opacity;
+    animation-name: heart-opacity;
+}
+@keyframes heart-opacity{
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(100);
     }
 }

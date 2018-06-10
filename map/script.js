@@ -104,7 +104,16 @@ function drawHeart(COUNT) {
     }
 //    添加事件监听
     $('.mask img.flash').click(function () {
-        tab('../map-detail/MapDetail.html')
+        var k = $(this).index();
+        console.log(k)
+        var that = $('.mask img:nth-child('+(k+1)+')')
+        console.log(that)
+        that.removeClass('animated infinite')
+        that.addClass('my-animated heart-wave my-quick')
+        setTimeout((function () {
+            window.location.href = "https://kittyfairy-han.github.io/littleHdu/map-detail/MapDetail.html";
+        }),1500)
+
     })
 }
 
