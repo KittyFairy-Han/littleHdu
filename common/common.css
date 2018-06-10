@@ -1,3 +1,17 @@
+/*字体*/
+@font-face {
+    font-family: 'tabfont';
+    src : url('./font/STHeiti-Medium.ttc');
+}
+/*颜色*/
+/*red 1 #ffa5a4 */
+/*red 2 #f9d8d8 */
+/*green 1 #2fd6ab */
+/*green 2 #b5f3e9 */
+/*yellow 1 #ffe246 */
+/*yellow 2 #fff899 */
+/*blue 1 #67bcff */
+/*blue 2 #c5e3fc */
 *{
     padding: 0;
     margin: 0;
@@ -13,53 +27,7 @@ a{
 button{
     border: none;
 }
-img.icon{
-    width: 50px;
-    height: 50px;
-}
-/*tab*/
-.footer{
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-    padding:  20px 0 5px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-top: solid darkgray 1px;
-}
-.footer .tab{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.footer .tab h4{
-    line-height: 40px;
-    text-align: center;
-    color: grey;
-}
-.footer .tab.active h4{
-    color: #2fd6ab;
-}
-/*返回*/
-.header .back{
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    font-size: 40px;
-    line-height: 80px;
-    font-weight: 600;
-    color: #4caf50;
-    box-shadow: rgba(128, 128, 128, 0.49) 2px 0 10px;
-}
-.header .back img{
-    position: absolute;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    margin:15px 2%;
-}
+
 /*一级标题*/
 h1{
     font-size: 50px;
@@ -85,15 +53,58 @@ p.content {
 img.label{
     margin-right: 10px;
 }
-/*颜色*/
-/*red 1 #ffa5a4 */
-/*red 2 #f9d8d8 */
-/*green 1 #2fd6ab */
-/*green 2 #b5f3e9 */
-/*yellow 1 #ffe246 */
-/*yellow 2 #fff899 */
-/*blue 1 #67bcff */
-/*blue 2 #c5e3fc */
+img.icon{
+    width: 50px;
+    height: 50px;
+}
+/*tab*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    padding:  20px 0 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid darkgray 1px;
+}
+.footer .tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .tab h4{
+    font-family: tabfont;
+    line-height: 40px;
+    text-align: center;
+    color: grey;
+}
+.footer .tab.active h4{
+    color: #2fd6ab;
+}
+/*返回*/
+.header {
+    background-image: url("../common/image/bg.png");
+}
+.header .back{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: 600;
+    color: #4caf50;
+    box-shadow: rgba(128, 128, 128, 0.49) 2px 0 10px;
+}
+.header .back img{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    margin:15px 2%;
+}
+
 
 /* animate */
 @charset "UTF-8";

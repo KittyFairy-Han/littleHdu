@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: stretch;
     background: linear-gradient(rgb(166, 238, 219) , rgb(47, 214, 171) , rgb(166, 238, 219));
+    background-size: cover;
 }
 
 .header button {
