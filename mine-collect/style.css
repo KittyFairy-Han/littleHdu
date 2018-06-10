@@ -3,17 +3,10 @@
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    /*background: linear-gradient(60deg, rgb(100, 199, 252) 25%, rgb(185, 232, 255));*/
     background-image: url("../mine/image/bg.png");
 }
 
-.header button {
-    background: none;
-    color: #57debb;
-    font-size: 30px;
-    line-height: 80px;
-    border-bottom: solid 10px rgba(78, 189, 252, 0);
-}
+
 
 .header button.active{
     border-bottom: solid 10px #57debb;

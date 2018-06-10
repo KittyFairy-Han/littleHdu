@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="636d1d58-6dcd-4efe-84b5-99d45a64f4fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/font/STHeiti-Light.ttc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/font/STHeiti-Medium.ttc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/image/bg.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/login/img/avtar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/login/img/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/login/img/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mine-info/image/selected.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/image/bg.png" afterPath="$PROJECT_DIR$/common/image/bg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle/style.css" afterPath="$PROJECT_DIR$/circle/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.css" afterPath="$PROJECT_DIR$/common/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/style.css" afterPath="$PROJECT_DIR$/login/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mine-collect/style.css" afterPath="$PROJECT_DIR$/mine-collect/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mine-info/MineInfo.html" afterPath="$PROJECT_DIR$/mine-info/MineInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mine-info/style.css" afterPath="$PROJECT_DIR$/mine-info/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mine/Mine.html" afterPath="$PROJECT_DIR$/mine/Mine.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,10 +47,31 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/circle/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="93" lean-forward="false" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
+            <state relative-caret-position="222">
+              <caret line="163" column="14" lean-forward="false" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="14" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bg.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mine/image/bg.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="back.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mine-info/image/back.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bg.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/image/bg.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -69,23 +88,13 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="87" column="52" lean-forward="false" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
+            <state relative-caret-position="276">
+              <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
               <folding>
-                <element signature="e#2462#3263#0" expanded="false" />
-                <element signature="e#3265#4058#0" expanded="false" />
-                <element signature="e#4068#4216#0" expanded="false" />
+                <element signature="e#2914#3715#0" expanded="false" />
+                <element signature="e#3717#4510#0" expanded="false" />
+                <element signature="e#4520#4668#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="21" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -108,6 +117,7 @@
       <find>my-animated</find>
       <find>2em</find>
       <find>body</find>
+      <find>.hot .item ,.new .item</find>
     </findStrings>
     <replaceStrings>
       <replace>34px</replace>
@@ -124,6 +134,10 @@
         <option value="$PROJECT_DIR$/login/script.js" />
         <option value="$PROJECT_DIR$/login/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/mine/Mine.html" />
+        <option value="$PROJECT_DIR$/mine-info/MineInfo.html" />
+        <option value="$PROJECT_DIR$/mine-info/style.css" />
+        <option value="$PROJECT_DIR$/mine-collect/style.css" />
         <option value="$PROJECT_DIR$/circle/style.css" />
         <option value="$PROJECT_DIR$/common/common.css" />
       </list>
@@ -188,6 +202,39 @@
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="font" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="littleHdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleHdu" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleHdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleHdu" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleHdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleHdu" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleHdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleHdu" type="462c0819:PsiDirectoryNode" />
+              <item name="mine-collect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleHdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleHdu" type="462c0819:PsiDirectoryNode" />
+              <item name="mine-info" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleHdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleHdu" type="462c0819:PsiDirectoryNode" />
+              <item name="mine-info" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -231,12 +278,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528610877746</updated>
-      <workItem from="1528610879017" duration="11463000" />
+      <workItem from="1528610879017" duration="14534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11463000" />
+    <option name="totallyTimeSpent" value="14534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -295,7 +342,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mine/Mine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine-info/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine-info/MineInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine-collect/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine-collect/MineCollect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle/Circle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/image/bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine/image/bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine-info/image/selected.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine-info/image/back.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -318,20 +428,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circle/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="93" lean-forward="false" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
+        <state relative-caret-position="222">
+          <caret line="163" column="14" lean-forward="false" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="87" column="52" lean-forward="false" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
+        <state relative-caret-position="276">
+          <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
           <folding>
-            <element signature="e#2462#3263#0" expanded="false" />
-            <element signature="e#3265#4058#0" expanded="false" />
-            <element signature="e#4068#4216#0" expanded="false" />
+            <element signature="e#2914#3715#0" expanded="false" />
+            <element signature="e#3717#4510#0" expanded="false" />
+            <element signature="e#4520#4668#0" expanded="false" />
           </folding>
         </state>
       </provider>

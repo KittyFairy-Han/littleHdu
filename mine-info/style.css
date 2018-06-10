@@ -3,27 +3,9 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    /*background: linear-gradient(60deg, rgb(100, 199, 252) 25%, rgb(225, 232, 255));*/
     font-size: 30px;
 }
 
-header a{
-     height:50px;
-     width:50px;
- }
-
-header p{
-    text-align: center;
-    padding-top:45px ;
-    color: black;
-}
-
-
-header img{
-    padding: 30px;
-    height:60px;
-    width:60px;
-}
 
 /*main*/
 #info .main {
@@ -40,7 +22,6 @@ header img{
 
 /*main-list*/
 #info .main .list {
-    /*min-height: 2000px;*/
     padding: 50px 2%;
     width: 96%;
     z-index: 10;

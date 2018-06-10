@@ -3,17 +3,11 @@
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    background: linear-gradient(rgb(166, 238, 219) , rgb(47, 214, 171) , rgb(166, 238, 219));
+    /*background: linear-gradient(rgb(166, 238, 219) , rgb(47, 214, 171) , rgb(166, 238, 219));*/
     background-size: cover;
 }
 
-.header button {
-    background: none;
-    color: white;
-    line-height: 80px;
-    border-bottom: solid 10px rgba(78, 189, 252, 0);
-    font-size: 34px;
-}
+
 
 .header button.active{
     border-bottom: solid 10px #14d5a3;
@@ -166,7 +160,7 @@
     z-index: 100;
 }
 .hot .item ,.new .item{
-    width: 49%;
+    width: 48%;
     margin:0 1%;
     display: flex;
     flex-direction: column;

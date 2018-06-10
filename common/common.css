@@ -16,7 +16,6 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    /*display: block;*/
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -67,6 +66,8 @@ img.icon{
     justify-content: space-around;
     align-items: center;
     border-top: solid darkgray 1px;
+    background-image: url("../mine/image/bg.png");
+    background-size: cover;
 }
 .footer .tab{
     display: flex;
@@ -86,6 +87,8 @@ img.icon{
 /*返回*/
 .header {
     background-image: url("../common/image/bg.png");
+    background-size: cover;
+    box-shadow: rgba(128, 128, 128, 0.49) 2px 0 10px;
 }
 .header .back{
     width: 100%;
@@ -94,8 +97,10 @@ img.icon{
     font-size: 40px;
     line-height: 80px;
     font-weight: 600;
-    color: #4caf50;
-    box-shadow: rgba(128, 128, 128, 0.49) 2px 0 10px;
+    color: #2fd6ab;
+    /*box-shadow: rgba(128, 128, 128, 0.49) 2px 0 10px;*/
+    background-color: #ffffff87;
+    font-family: tabfont;
 }
 .header .back img{
     position: absolute;
@@ -104,8 +109,17 @@ img.icon{
     height: 50px;
     margin:15px 2%;
 }
-
-
+/*header 二级导航*/
+.header button{
+    background: none;
+    color: #2fd6ab;
+    line-height: 80px;
+    border-bottom: solid 10px rgba(78, 189, 252, 0);
+    font-size: 40px;
+    font-family: tabfont;
+    background-color: #ffffff99;
+    font-weight: 600;
+}
 /* animate */
 @charset "UTF-8";
 
