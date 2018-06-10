@@ -1,14 +1,36 @@
+body{
+    position: relative;
+    height: 100%;
+}
+#map .header{
+
+}
+#map .main{
+    position: absolute;
+    top: 0;
+    bottom: 120px;
+    z-index: 1;
+}
+#map .main *{
+    transition: 0.5s;
+}
 #map .main .search{
     margin: 20px 10%;
     width: 80%;
     height: 75px;
     display: flex;
-    box-shadow: 0 0 10px grey;
+    justify-content: flex-end;
+    opacity: 0.7;
+    transition: 0.5s;
+    box-shadow:none
 }
 .search input{
-    flex: 1;
-    padding:0 0 0 5%;
+    flex: 0;
     font-size: 24px;
+    transition: 0.5s;
+}
+.search input.active{
+    flex: 1;
 }
 .search button{
     width: 80px;
@@ -19,13 +41,23 @@
     background-image: url("../common/image/search.png");
     background-position: center;
 }
+.search button.for-drop{
+
+    background: #67bcff;
+}
+#map #bai-du-map{
+    top:0;
+    bottom: 120px;
+    min-height: 1200px;
+}
 #map .main .drop-down{
     margin: 20px 0;
     height: 150px;
-    display: flex;
+    display: none;
+    /*display: flex;*/
     justify-content: space-around;
     align-items: center;
-    background: white;
+    background: rgba(255, 255, 255, 0.7);
 }
 .drop-down .switch{
     width: 64px;
@@ -50,3 +82,42 @@
 .drop-down .switch:nth-child(4)>button{
     background-image: url("img/s4.png");
 }
+/* main-mask */
+.main .mask{
+min-height: 1000px;
+}
+.main .mask .flash{
+    position: fixed;
+}
+/* main - result*/
+.main .result-list{
+    padding: 0 0;
+    position: absolute;
+    top: 115px;
+    left: 10%;
+    width: 80%;
+    display: none;
+}
+.main .result-list .item {
+    height: 105px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px #e0e0e0 solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #a8a8a8;
+}
+.item   h3 {
+    font-size: 36px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.item   h4 {
+    font-size: 36px;
+    text-align: right;
+    padding-right: 30px;
+    color: #7f7c7c;
+}
+

@@ -1,0 +1,110 @@
+#collect .header {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    /*background: linear-gradient(60deg, rgb(100, 199, 252) 25%, rgb(185, 232, 255));*/
+    background-image: url("../mine/image/bg.png");
+}
+
+.header button {
+    background: none;
+    color: #57debb;
+    font-size: 30px;
+    line-height: 80px;
+    border-bottom: solid 10px rgba(78, 189, 252, 0);
+}
+
+.header button.active{
+    border-bottom: solid 10px #57debb;
+}
+
+/*main*/
+#collect .main {
+    position: absolute;
+    top: 120px;
+    bottom: 120px;
+    min-height: 600px;
+    overflow: scroll;
+    background-color: #f7f7f7;
+}
+
+/*main-list*/
+#collect .main .list {
+    /*min-height: 2000px;*/
+    padding: 50px 2%;
+    width: 96%;
+    position: absolute;
+    background-color: #f7f7f7;
+    animation-duration:1s;
+}
+
+.list .item {
+    margin-bottom: 30px;
+    display: flex;
+    box-shadow: 1px 0 13px #e0e0e0;
+    border-bottom: 1px #e0e0e0 solid;
+    border-radius: 10px;
+    background-color: white;
+}
+.item .right {
+    padding: 20px;
+    border-radius: 5px;
+    color: #a8a8a8;
+}
+/*part1*/
+.item .right .part1 {
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.item .right .part1 img{
+    width: 64px;
+    height: 64px;
+}
+
+.item .right .part1 .place{
+    text-align: right;
+}
+.part1 > div > h4 {
+    color: #7c7c7c;
+    line-height: 40px;
+}
+.part1 h4.sup{
+    /*background-image: url("../common/image/support-active.png");*/
+    background-size: contain;
+    background-position: 90%;
+}
+/*part2*/
+.item .right .part2 {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+/*part3*/
+.item .right .part3{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.item .right .part3 .image{
+    width: 48%;
+    margin: 2px 1%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../mine/image/bg.png");
+}
+.item .right .part3 img{
+    width: 100%;
+
+}
+
+
+

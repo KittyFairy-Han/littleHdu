@@ -2,287 +2,728 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--库-->
+    <script src="../common/jquery-1.8.3.min.js"></script>
+    <script src="../common/animate.js"></script>
     <!--<title>Title</title>-->
     <link href="../common/common.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="../common/jquery-3.3.1.js"></script>
     <script src="../common/common.js"></script>
+    <script src="script.js"></script>
 </head>
 <body id="circle">
 <header class="header">
-    <button>__新__</button>
-    <button>__热__</button>
-    <button class="active">公选课</button>
+    <button class="active" onclick="toggleSwitch(0)">最新</button>
+    <button onclick="toggleSwitch(1)">最热</button>
+    <button onclick="toggleSwitch(2)">公选课</button>
 </header>
 <main class="main">
-<section class="list">
-    <ul>
-        <li class="subject">
-            <div class="left">
-                <h1>.</h1>
-            </div>
-            <div class="right">
-                <div class="part1">
-                    <h3>音乐历史与音乐鉴赏</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>李丹丹</h4>
-                    </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>589</h4>
-                    </div>
-
+    <!-- ----------------------  hot ------------ -->
+    <section class="new">
+        <ul>
+            <li class="item">
+                <div>
+                    <img src="image/i1.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>3-217</h4>
-                    </div>
-                    <div>
+                    东门又开了一家蜜雪冰城
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周二 3-5节 (1-16周)</h4>
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电生活区东门</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="subject">
-            <div class="left">
-                <h1>.</h1>
-            </div>
-            <div class="right">
                 <div class="part1">
-                    <h3>acm算法</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>刘春英</h4>
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>想叫什么就叫什么</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            2000
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
                     </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>456</h4>
-                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="../mine-collect/image/x2.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>6-108</h4>
-                    </div>
-                    <div>
+                    十一教9教中间这条路真的适合拍照
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周五 10-11节 (1-16周)</h4>
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电第九教研楼</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="subject">
-            <div class="left">
-                <h1>.</h1>
-            </div>
-            <div class="right">
                 <div class="part1">
-                    <h3>社会调查</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>吴彬</h4>
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>玉</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            87
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
                     </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>402</h4>
-                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i2.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>12-503</h4>
-                    </div>
-                    <div>
+                    北门的芭比馒头没有美食城的好吃，但是人少啊，不用排队啊哈哈哈
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周二 6-8节 (1-16周)</h4>
+                        <h4>19:36</h4></div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电生活区-北门</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="subject">
-            <div class="left">
-                <h1>4</h1>
-            </div>
-            <div class="right">
                 <div class="part1">
-                    <h3>动作捕捉人机交互</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>陈华</h4>
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>妖娆如我</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            1870
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
                     </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>378</h4>
-                    </div>
-
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i3.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>3-217</h4>
-                    </div>
-                    <div>
+                    学校周边，学校里面都有打印店，但最实惠的还是北门的
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周三 10-12节 (1-16周)</h4>
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电生活区</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="subject">
-            <div class="left">
-                <h1>5</h1>
-            </div>
-            <div class="right">
                 <div class="part1">
-                    <h3>膳食管理和营养</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>李微微</h4>
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>玉</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            4990
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
                     </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>300</h4>
-                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i6.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>6-108</h4>
-                    </div>
-                    <div>
+                    网易来了诶
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周五 10-11节 (1-16周)</h4>
+                        <h4>9:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭州电子科技大学-学活舞池</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="subject">
-            <div class="left">
-                <h1>6</h1>
-            </div>
-            <div class="right">
                 <div class="part1">
-                    <h3>文化传播与融合</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>小花</h4>
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>cherry</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            145
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
                     </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>267</h4>
-                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i5.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>11-403</h4>
-                    </div>
-                    <div>
+                    重庆小面不错 推荐给大家
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周四 6-7节 (1-16周)</h4>
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电生活区东门</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="subject">
-            <div class="left">
-                <h1>7</h1>
-            </div>
-            <div class="right">
                 <div class="part1">
-                    <h3>动作捕捉人机交互</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>陈华</h4>
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>cherry</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            145
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
                     </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>378</h4>
-                    </div>
-
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i4.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>3-217</h4>
-                    </div>
-                    <div>
+                    南瓜车造型有优惠券，10元理发啦，美滋滋。
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周三 10-12节 (1-16周)</h4>
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭州电子科技大学</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="subject">
-            <div class="left">
-                <h1>8</h1>
-            </div>
-            <div class="right">
                 <div class="part1">
-                    <h3>膳食管理和营养</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>李微微</h4>
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>cherry</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            665
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
                     </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>300</h4>
-                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- -------- -------------------- new          -->
+    <section class="hot">
+        <ul>
+            <li class="item">
+                <div>
+                    <img src="image/i3.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>6-108</h4>
-                    </div>
-                    <div>
+                    学校周边，学校里面都有打印店，但最实惠的还是北门的
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周五 10-11节 (1-16周)</h4>
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电生活区</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="subject">
-            <div class="left">
-                <h1>9</h1>
-            </div>
-            <div class="right">
                 <div class="part1">
-                    <h3>文化传播与融合</h3>
-                    <div>
-                        <img class="icon label" src="../common/image/teacher.png">
-                        <h4>小花</h4>
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>玉</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            1314
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
                     </div>
-                    <div>
-                        <img class="icon label" src="../common/image/support.png">
-                        <h4>267</h4>
-                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i4.png">
                 </div>
                 <div class="part2">
-
-                    <div>
-                        <img class="icon label" src="../common/image/address.png">
-                        <h4>11-403</h4>
-                    </div>
-                    <div>
+                    南瓜车造型有优惠券，10元理发啦，美滋滋。
+                </div>
+                <div class="part3">
+                    <div class="time">
                         <img class="icon label" src="../common/image/time.png">
-                        <h4>周四 6-7节 (1-16周)</h4>
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭州电子科技大学</h4>
                     </div>
                 </div>
-            </div>
-        </li>
-    </ul>
-</section>
+                <div class="part1">
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>cherry</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            1245
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i5.png">
+                </div>
+                <div class="part2">
+                    东门又开了一家蜜雪冰城
+                </div>
+                <div class="part3">
+                    <div class="time">
+                        <img class="icon label" src="../common/image/time.png">
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电生活区东门</h4>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>想叫什么就叫什么</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            999
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i2.png">
+                </div>
+                <div class="part2">
+                    北门的芭比馒头没有美食城的好吃，但是人少啊，不用排队啊哈哈哈
+                </div>
+                <div class="part3">
+                    <div class="time">
+                        <img class="icon label" src="../common/image/time.png">
+                        <h4>19:36</h4></div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电生活区-北门</h4>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>妖娆如我</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            765
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i3.png">
+                </div>
+                <div class="part2">
+                    学校周边，学校里面都有打印店，但最实惠的还是北门的
+                </div>
+                <div class="part3">
+                    <div class="time">
+                        <img class="icon label" src="../common/image/time.png">
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭电生活区</h4>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>玉</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            711
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div>
+                    <img src="image/i1.png">
+                </div>
+                <div class="part2">
+                    南瓜车造型有优惠券，10元理发啦，美滋滋。
+                </div>
+                <div class="part3">
+                    <div class="time">
+                        <img class="icon label" src="../common/image/time.png">
+                        <h4>19:36</h4>
+                    </div>
+                    <div class="place">
+                        <img class="icon label" src="../common/image/address.png">
+                        <h4>杭州电子科技大学</h4>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img class="icon label" src="./image/100.gif">
+                    <h3>cherry</h3>
+                    <div class="part4">
+                        <div class="good">
+                            <img class="icon" src="../common/image/support.png">
+                        </div>
+                        <div class="support-active">
+                            600
+                        </div>
+                        <div class="transport">
+                            <img class="icon" src="../common/image/share.png">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--   -----------------   main    ---------------------  list  ---------------------------    -->
+    <section class="list">
+        <ul>
+            <li class="subject">
+                <div class="left">
+                    <h1>.</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>音乐历史与音乐鉴赏</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>李丹丹</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>589</h4>
+                        </div>
+
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>3-217</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周二 3-5节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="subject">
+                <div class="left">
+                    <h1>.</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>acm算法</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>刘春英</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>456</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>6-108</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周五 10-11节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="subject">
+                <div class="left">
+                    <h1>.</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>社会调查</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>吴彬</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>402</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>12-503</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周二 6-8节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="subject">
+                <div class="left">
+                    <h1>4</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>动作捕捉人机交互</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>陈华</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>378</h4>
+                        </div>
+
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>3-217</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周三 10-12节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="subject">
+                <div class="left">
+                    <h1>5</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>膳食管理和营养</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>李微微</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>300</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>6-108</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周五 10-11节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="subject">
+                <div class="left">
+                    <h1>6</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>文化传播与融合</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>小花</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>267</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>11-403</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周四 6-7节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="subject">
+                <div class="left">
+                    <h1>7</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>动作捕捉人机交互</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>陈华</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>378</h4>
+                        </div>
+
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>3-217</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周三 10-12节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="subject">
+                <div class="left">
+                    <h1>8</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>膳食管理和营养</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>李微微</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>300</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>6-108</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周五 10-11节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="subject">
+                <div class="left">
+                    <h1>9</h1>
+                </div>
+                <div class="right">
+                    <div class="part1">
+                        <h3>文化传播与融合</h3>
+                        <div>
+                            <img class="icon label" src="../common/image/teacher.png">
+                            <h4>小花</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/support.png">
+                            <h4>267</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+
+                        <div>
+                            <img class="icon label" src="../common/image/address.png">
+                            <h4>11-403</h4>
+                        </div>
+                        <div>
+                            <img class="icon label" src="../common/image/time.png">
+                            <h4>周四 6-7节 (1-16周)</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
 </main>
 <footer class="footer">
     <div class="tab active" onclick="tab(1)">

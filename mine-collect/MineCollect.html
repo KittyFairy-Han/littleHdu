@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>Title</title>-->
+    <link href="../common/common.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="../common/jquery-3.3.1.js"></script>
+    <script src="../common/common.js"></script>
+    <script src="script.js"></script>
+</head>
+<body id="collect">
+<header class="header">
+    <button onclick="pub()">发布</button>
+    <button onclick="coll()" class="active">收藏</button>
+</header>
+<main class="main">
+    <section class="list pub">
+        <ul>
+            <li class="item">
+                <div class="right">
+                    <div class="part1">
+                        <img class="icon label" src="../common/image/avatar.png">
+                        <div class="name">
+                            <h4>#某同学8808</h4>
+                            <h4>19:36</h4>
+                        </div>
+                        <div class="place">
+                            <h4>@杭州电子科技大学</h4>
+                            <h4 class="sup">❤67</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <h3>上海之前再也不打游戏了，打就是猪。</h3>
+                    </div>
+                    <div class="part3">
+                        <div class="image">
+                            <img src="image/100.gif">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="right">
+                    <div class="part1">
+                        <img class="icon label" src="../common/image/avatar.png">
+                        <div class="name">
+                            <h4>#某同学8808</h4>
+                            <h4>2018-5-28 20:06</h4>
+                        </div>
+                        <div class="place">
+                            <h4>@杭州电子科技大学</h4>
+                            <h4 class="sup">❤31</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <h3>千万不能去北门剪头发</h3>
+                    </div>
+                    <div class="part3">
+                        <!--<img src="image/avatar.png">-->
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="right">
+                    <div class="part1">
+                        <img class="icon label" src="../common/image/avatar.png">
+                        <div class="name">
+                            <h4>#某同学8808</h4>
+                            <h4>2018-5-20 19:36</h4>
+                        </div>
+                        <div class="place">
+                            <h4>@杭州电子科技大学</h4>
+                            <h4 class="sup">❤11</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <h3>更新头像</h3>
+                    </div>
+                    <div class="part3">
+                        <div class="image">
+                            <img src="../common/image/avatar.png">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="list coll">
+        <ul>
+            <li class="item">
+                <div class="right">
+                    <div class="part1">
+                        <img class="icon label" src="image/100.gif">
+                        <div class="name">
+                            <h4>#小明</h4>
+                            <h4>19:36</h4>
+                        </div>
+                        <div class="place">
+                            <h4>@杭州电子科技大学</h4>
+                            <h4 class="sup">❤67</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <h3>十一教9教中间这条路真的适合拍照</h3>
+                    </div>
+                    <div class="part3">
+                        <div class="image">
+                            <img src="image/x1.png">
+                        </div>
+                        <div class="image"><img src="image/x2.png"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="right">
+                    <div class="part1">
+                        <img class="icon label" src="image/a2.png">
+                        <div class="name">
+                            <h4>#一只猫</h4>
+                            <h4>2018-5-9 20:06</h4>
+                        </div>
+                        <div class="place">
+                            <h4>@杭电生活区北门</h4>
+                            <h4 class="sup">❤31</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <h3>打印店大赞</h3>
+                    </div>
+                    <div class="part3">
+                        <!--<img src="image/avatar.png">-->
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="right">
+                    <div class="part1">
+                        <img class="icon label" src="image/a1.png">
+                        <div class="name">
+                            <h4>#某同学9008</h4>
+                            <h4>2018-4-20 19:36</h4>
+                        </div>
+                        <div class="place">
+                            <h4>@杭州生活区五号楼</h4>
+                            <h4 class="sup">❤11</h4>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <h3>取快递回来发现在开小型演唱会哈哈</h3>
+                    </div>
+                    <div class="part3">
+                        <div class="image">
+                            <img src="./image/i1.png">
+                        </div>
+                        <div class="image">
+                            <img src="./image/i2.png">
+                        </div>
+                        <div class="image">
+                            <img src="./image/i3.png">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    <div class="tab active" onclick="tab(1)">
+        <img class="icon" src="../common/image/tab11.png">
+        <h4>首页</h4>
+    </div>
+    <div class="tab" onclick="tab(2)">
+        <img class="icon" src="../common/image/tab2.png">
+        <h4>地图</h4>
+    </div>
+    <div class="tab" onclick="tab(3)">
+        <img class="icon" src="../common/image/tab3.png">
+        <h4>我的</h4>
+    </div>
+</footer>
+</body>
+</html>

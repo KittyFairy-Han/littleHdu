@@ -1,0 +1,158 @@
+#circle .header {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    background: linear-gradient(60deg, rgb(100, 199, 252) 25%, rgb(185, 232, 255));
+}
+
+.header button {
+    background: none;
+    color: white;
+    font-size: 30px;
+    line-height: 120px;
+    border-bottom: solid 10px rgba(78, 189, 252, 0);
+}
+/*
+.header button.active{
+    border-bottom: solid 10px #4ebdfc;
+}
+*/
+/*main*/
+#circle .main {
+    position: absolute;
+    top: 120px;
+    bottom: 120px;
+    min-height: 1000px;
+    overflow: scroll;
+}
+
+/*main-list*/
+#circle .main .list {
+    /*min-height: 2000px;*/
+    padding: 50px 2%;
+    width: 96%;
+    background-color: #f7f7f7;
+}
+
+.list .subject {
+    margin-bottom: 30px;
+    display: flex;
+    box-shadow: 1px 0 13px #e0e0e0;
+    border-bottom: 1px #e0e0e0 solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+.subject .right {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex: 1;
+    border-radius: 5px;
+    /*border: 1px yellow solid;*/
+    color: #a8a8a8;
+}
+
+.subject .right .part0 {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;*/
+}
+.subject .right .part0 h3 {
+    font-size: 30px;
+    flex: 1;
+    margin-top:0px;
+    margin-left: 0px;
+}
+.subject .right .part1 {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;*/
+}
+
+
+
+.subject .right .part2 {
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subject .right .part2 img{
+    width: 200px;
+    height: 200px;
+    /*color: white;*/
+    margin-top: -250px;
+    margin-left: 50px;
+}
+.subject .right .part2 h3 {
+    font-size: 15px;
+    flex: 1;
+    margin-top:-30px;
+    margin-left: 100px;
+}
+.subject .right .part2 h4 {
+    font-size: 15px;
+    flex: 1;
+    margin-top:-335px;
+    margin-left: 100px;
+}
+.subject .right .part3 {
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+}
+.subject .right .part3 img{
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.subject .right .part3 .placeicon {
+    flex: 1;
+    margin-top: 0px;
+    margin-left: -400px;
+}
+.subject .right .part3  h4 {
+    font-size: 20px;
+    flex: 1;
+    margin-top: -35px;
+    margin-left: 10px;
+}
+
+
+
+.subject .right .part4 {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subject .right .part4 img{
+    width: 15px;
+    height: 15px;
+    /*color: #7c7c7c;*/
+}
+.subject .right .part4 .good {
+    
+    margin-top: 0px;
+    margin-left: 800px;
+}
+.subject .right .part4 .discuss {
+    
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.subject .right .part4 .transport {
+    
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+

@@ -4,26 +4,56 @@
     <meta charset="UTF-8">
     <!--<title>Title</title>-->
     <link href="../common/common.css" rel="stylesheet">
-
     <link href="style.css" rel="stylesheet">
     <script src="../common/jquery-3.3.1.js"></script>
     <script src="../common/common.js"></script>
 </head>
 <body id="mine">
+<header>
+    <img src="./image/avatar.png">
+    <h3>某同学#8808</h3>
+</header>
 <main class="main">
-this is mine
+    <section class="list">
+        <ul>
+            <li class="nav" onclick="tab('../mine-info/MineInfo.html')">
+                <img class="icon label" src="image/info.png">
+                <h3>我的资料</h3>
+                <img class="icon label" src="image/in.png">
+            </li>
+            <li class="nav" onclick="tab('../mine-collect/MineCollect.html')">
+                <img class="icon label" src="image/collect.png">
+                <h3>我的收藏</h3>
+                <img class="icon label" src="image/in.png">
+            </li>
+            <li class="nav" onclick="tab('../mine-collect/MineCollect.html')">
+                <img class="icon label" src="../common/image/pub.png">
+                <h3>我的发布</h3>
+                <img class="icon label" src="image/in.png">
+            </li>
+        </ul>
+    </section>
+    <section class="list">
+        <ul>
+            <li class="nav">
+                <img class="icon label" src="image/response.png">
+                <h3>问题与反馈</h3>
+                <img class="icon label" src="image/in.png">
+            </li>
+        </ul>
+    </section>
 </main>
 <footer class="footer">
-    <div class="tab active" onclick="tab(1)">
-        <img class="icon" src="../common/image/tab11.png">
+    <div class="tab" onclick="tab(1)">
+        <img class="icon" src="../common/image/tab1.png">
         <h4>首页</h4>
     </div>
     <div class="tab" onclick="tab(2)">
         <img class="icon" src="../common/image/tab2.png">
         <h4>地图</h4>
     </div>
-    <div class="tab" onclick="tab(3)">
-        <img class="icon" src="../common/image/tab3.png">
+    <div class="tab active" onclick="tab(3)">
+        <img class="icon" src="../common/image/tab31.png">
         <h4>我的</h4>
     </div>
 </footer>
